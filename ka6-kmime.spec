@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.12.0
+%define		kdeappsver	24.12.1
 %define		qtver		5.15.2
 %define		kaname		kmime
 Summary:	KMime
 Name:		ka6-%{kaname}
-Version:	24.12.0
+Version:	24.12.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	ab189db00bbf3a5b641a8731afb05639
+# Source0-md5:	43487c557469568162acb17c8dd5d7a8
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= 5.9.0
