@@ -1,17 +1,17 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.04.0
-%define		qtver		5.15.2
+%define		kdeappsver	26.04.1
+%define		qtver		6.10.0
 %define		kaname		kmime
 Summary:	KMime
 Name:		ka6-%{kaname}
-Version:	26.04.0
-Release:	2
+Version:	26.04.1
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	779f6a23a726a2d023a312a151fe1751
+# Source0-md5:	04c5d6598357fd5b775e4938e1416c11
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= 5.9.0
@@ -23,6 +23,7 @@ BuildRequires:	kf6-ki18n-devel
 BuildRequires:	kf6-ki18n-devel >= 5.51.0
 BuildRequires:	ninja
 BuildRequires:	qt6-build >= %{qtver}
+BuildRequires:	qt6-linguist >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	shared-mime-info
 BuildRequires:	tar >= 1:1.22
